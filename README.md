@@ -1,10 +1,8 @@
 ### Employee Directory Mobile App based on React Native
-<table>
-<tr>
-  <img src="android.png" style="width: 40%"/>
-  <img src="ios.jpg" style="width: 40%;"/>
-</tr>
-</table>
+
+<img src="android.png" width="200" />
+<img src="ios.jpg" width="200" />
+
 ---
 
 See [here](https://facebook.github.io/react-native/docs/getting-started.html#content) and [here](https://facebook.github.io/react-native/docs/android-setup.html#content) on how to setup react-native
