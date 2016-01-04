@@ -1,4 +1,4 @@
-BACKEND='http://kube1.huaweim2m.com:30005';
+BACKEND='http://rancher1.huaweim2m.com:3000';
 
 config = {
   API: BACKEND+'/api/employees',

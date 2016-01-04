@@ -5,7 +5,6 @@
 'use strict';
 
 var React = require('react-native');
-var SearchBarIOS = require('react-native-search-bar');
 
 var {
   ActivityIndicatorIOS,
@@ -18,11 +17,13 @@ var SearchBar = React.createClass({
   render: function() {
     return (
       <View style={styles.searchBar}>
-        <SearchBarIOS placeholder='Search'
+        <TextInput
+          autoCapitalize="none"
+          autoCorrect={false}
           onChange={this.props.onSearchChange}
-          onSearchButtonPress={this.props.onSearchChange}
-          onCancelButtonPress={this.props.onClearSearch}
-          hideBackground={true}
+          placeholder="Search"
+          onFocus={this.props.onFocus}
+          style={styles.searchBarInput}
         />
         <ActivityIndicatorIOS
           animating={this.props.isLoading}
@@ -36,8 +37,10 @@ var SearchBar = React.createClass({
 var styles = StyleSheet.create({
   searchBar: {
     marginTop: 64,
-    //flexDirection: 'row',
-    //alignItems: 'center',
+    padding: 3,
+    paddingLeft: 8,
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   searchBarInput: {
     fontSize: 15,
@@ -45,11 +48,7 @@ var styles = StyleSheet.create({
     height: 30,
   },
   spinner: {
-    width: 30,
-    position: 'absolute',
-    right: 100,
-    top: 10,
-
+    width: 30
   },
 });
 
