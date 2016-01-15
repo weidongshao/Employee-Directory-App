@@ -6,8 +6,8 @@
     "start": "node_modules/react-native/packager/packager.sh"
   },
   "dependencies": {
-    "react-native": "^0.16.0",
-    "react-native-communications": "0.0.6",
-    "react-timer-mixin": "^0.13.3"
+    "react-native": "rnplay/react-native#0.17-stable",
+    "react-native-communications": "0.1.0",
+    "react-timer-mixin": "0.13.3"
   }
 }
