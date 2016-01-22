@@ -32,7 +32,7 @@
    */
 
 //  jsCodeLocation = [NSURL URLWithString:@"http://192.168.43.71:8081/index.ios.bundle?platform=ios&dev=true"];
-
+  jsCodeLocation = [NSURL URLWithString:@"https://raw.githubusercontent.com/Live4Code/Employee-Directory-App/master/ios/main.jsbundle"];
   /**
    * OPTION 2
    * Load from pre-bundled file on disk. To re-generate the static bundle
@@ -43,7 +43,7 @@
    * see http://facebook.github.io/react-native/docs/runningondevice.html
    */
 
-   jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+   //jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"EmployeeDirectory"
